@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #E5D729; /* Entire webpage background color */
+  color: black; /* Text color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px; /* Set a max width for the container */
+}
+
+.left-column {
+  width: 33%;
+  padding: 20px;
+  background-color: #FFEF2E; /* Background color for the left column */
+  border-right: 2px solid #ccc; /* Border between columns */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers content in the left column */
+}
+
+.right-column {
+  width: 66%;
+  padding: 20px;
+  background-color: #FFEF2E; /* Background color for the right column */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers content in the right column */
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the logo circular */
+  object-fit: cover;
+  margin-bottom: 20px; /* Space below the logo */
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.location-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.description {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 25px; /* Smaller width for icons */
+  height: 25px; /* Smaller height for icons */
+  object-fit: cover;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #FFEF2E; /* Background color of the row */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  transform-origin: left; /* Ensures scaling happens relative to its left edge */
+}
+
+.top-row:hover {
+  background-color: #E5D729; /* Background color on hover */
+  transform: scale(1.02); /* Slightly scales up on hover */
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+}
+
+.stripe-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Space between the icon and the revenue amount */
+}
+
+.revenue-box {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Vertically centers the content within the box */
+}
+
+.status-box {
+  background-color: #ff69b4; /* Pink background for the status */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.footer-section {
+  width: 100%; 
+  max-width: 1200px; /* Ensures the footer section width matches the container width */
+  background-color: #FFEF2E; /* Background color similar to the columns */
+  padding: 20px;
+  border-top: 2px solid #ccc; /* Border between the columns and the footer */
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; /* Adds space between the two-column section and the footer */
+}
+
+.footer-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-decoration: underline; /* Underlines the link text */
+}
+
+/* General styles remain unchanged */
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .container {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center-align content */
+    }
+
+    .left-column, .right-column {
+        width: 100%; /* Make columns full-width */
+        padding: 10px; /* Reduce padding */
+        box-sizing: border-box;
+    }
+
+    .logo {
+        width: 120px; /* Adjust logo size for mobile */
+        height: 120px;
+    }
+
+    .top-row {
+        flex-direction: column; /* Stack company name and right content vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .company-link {
+        margin-bottom: 10px; /* Add spacing between "Tracle Studio" and the Stripe icon */
+    }
+
+    .footer-section {
+        margin-top: 20px; /* Adjust spacing between sections */
+        padding: 10px;
+        width: 100%;
+    }
+}

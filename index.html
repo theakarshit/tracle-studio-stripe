@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Info and Revenue Graph</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1kpgOMTEuOfAFzgYmLMgQFLVKmciL455nkQ&s" alt="Company Logo" class="logo">
+            <div class="location">
+                <img src="https://cdn-icons-png.flaticon.com/256/0/619.png" alt="Location Icon" class="location-icon">
+                London, United Kingdom
+            </div>
+            <p class="description">
+                I have been running Tracle Studio since October 2022, and I have worked with 18 clients in the B2B IT & Tech Space helping them with their project acquisition. Have helped clients add more than $2.1M with GTM strategies and founder-lead cold emails.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/akarshit-mahajan/" target="_blank">
+                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://x.com/theakarshit" target="_blank">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-black-icon.png" alt="X (Twitter)" class="social-icon">
+                </a>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="top-row">
+                <a href="https://traclestudio.webflow.io/" class="company-link" target="_blank">
+                    <span class="company-name">Tracle Studio</span>
+                </a>
+                <div class="top-right">
+                    <div class="revenue-box">
+                        <a href="https://stripe.com" target="_blank">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-stripe-2-498440.png?f=webp&w=256" alt="Stripe" class="stripe-icon">
+                        </a>
+                        $18.5k
+                    </div>
+                    <div class="status-box">
+                        Active
+                    </div>
+                </div>
+            </div>
+            <canvas id="revenueChart"></canvas>
+        </div>
+    </div>
+    <div class="footer-section">
+        <a href="https://cal.com/akarshit-mahajan-tracle/goa-retreat" target="_blank" class="footer-link">
+            Check out your eligibility for <strong>THE GOA RETREAT >></strong>
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
