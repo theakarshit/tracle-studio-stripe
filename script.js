@@ -4,7 +4,7 @@ const revenueChart = new Chart(ctx, {
     data: {
         labels: ['February', 'March', 'April', 'May', 'June', 'July', 'August'],
         datasets: [{
-            data: [12.1, 16.7, 21.3, 24.5, 20.9, 18.5, 5.7],
+            data: [12.1, 16.7, 21.3, 24.5, 20.9, 18.5, 11.2],
             borderColor: 'rgba(75, 192, 192, 1)',
             backgroundColor: 'rgba(75, 192, 192, 0.2)',
             borderWidth: 2,
