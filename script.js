@@ -2,9 +2,9 @@ const ctx = document.getElementById('revenueChart').getContext('2d');
 const revenueChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ['February', 'March', 'April', 'May', 'June', 'July', 'August'],
+        labels: ['March', 'April', 'May', 'June', 'July', 'August', 'September'],
         datasets: [{
-            data: [12.1, 16.7, 21.3, 24.5, 20.9, 18.5, 12.8],
+            data: [16.7, 21.3, 24.5, 20.9, 18.5, 16.4, 0.4],
             borderColor: 'rgba(75, 192, 192, 1)',
             backgroundColor: 'rgba(75, 192, 192, 0.2)',
             borderWidth: 2,
