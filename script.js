@@ -52,7 +52,8 @@ const revenueChart = new Chart(ctx, {
                     callback: function(value) {
                         return `$${value}k`; // Formats the y-axis values with a "k"
                     }
-                }
+                },
+                min: 0 // Ensures the graph starts from $0
             }
         }
     }
